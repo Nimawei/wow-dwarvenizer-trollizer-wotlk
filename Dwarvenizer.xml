@@ -1,16 +1,25 @@
-﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
-	<Script file="langDwarven.lua"/>
-	<Script file="langTrollish.lua"/>
-	<Script file="Dwarvenizer.lua"/>
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 
-	<Frame name="DwarvenizerFrame">
-		<Scripts>
-			<OnLoad>
-				this:RegisterEvent("VARIABLES_LOADED");
-			</OnLoad>
-			<OnEvent>
-				if (event == "VARIABLES_LOADED") then Dwarvenizer_onLoad(); end
-			</OnEvent>
-		</Scripts>
-	</Frame>
+    <!-- Load language tables first -->
+    <Script file="langDwarven.lua"/>
+    <Script file="langTrollish.lua"/>
+
+    <!-- Load core after languages -->
+    <Script file="Dwarvenizer.lua"/>
+
+    <!-- Simple hidden frame to receive the VARIABLES_LOADED event -->
+    <Frame name="DwarvenizerFrame" hidden="true">
+        <Scripts>
+            <OnLoad>
+                self:RegisterEvent("VARIABLES_LOADED");
+            </OnLoad>
+            <OnEvent>
+                if event == "VARIABLES_LOADED" then
+                    Dwarvenizer_onLoad();
+                end
+            </OnEvent>
+        </Scripts>
+    </Frame>
 </Ui>

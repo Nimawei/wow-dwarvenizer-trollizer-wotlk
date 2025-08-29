@@ -1,5 +1,5 @@
 DwarvenizerLangTrollish = {
-    name = "Trollizer";
+    name = "|cFF008000Trollizer|r";
     slashCommand = "trollizer";
     welcomeMsg = "Translates/mutilates your written word into something Sen'jin could've carved into a stone. Yah, mon!";
 
@@ -21,8 +21,6 @@ DwarvenizerLangTrollish = {
             };
 
     dict2 = {
-                {["^kek$"] = "OMG I JUST FARTED"},
-                {["^lolz$"] = "OMG WHY DIDN'T I PICK ALLIANCE WTF"},
                 {["little"] = "li'l§"},
                 {["^is$"] = "be§"},
                 {["^for$"] = "fo'§"},
@@ -41,8 +39,8 @@ DwarvenizerLangTrollish = {
                 {["^me$"] = "mi§"},
                 {["^my$"] = {"mi§", "me§"}},
                 {["^the$"] = {"da", "de"}},
-                {["^the(%w+)"] = "de%1"},
-                {["^tha(%w+)"] = "da%1"},
+                {['^the(%w+)'] = 'de%1'},
+                {['^tha(%w+)'] = 'da%1'},
                 {["^this$"] = "dis"},
                 {["th"] = "t'§"},
                 {["frostshock"] = "froshooogg"},

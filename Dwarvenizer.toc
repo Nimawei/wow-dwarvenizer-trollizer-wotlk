@@ -1,5 +1,9 @@
-## Interface: 20003
-## Title: Dwarvenizer / Trollizer 1.10
-## Notes: Translates/mutilates your written word into something more Dwarvish/Trollish. Oh aye! I mean, ya, mon! -- Type /dwarvenizer or /trollizer in your chatbox for explanations. -- Author: Param (A) of Steamwheedle Cartel (EU)
+## Interface: 30300
+
+## Title: Dwarvenizer/Trollinizer
+## Notes: Language manipulator for WotLK. It will butcher or translate your messages in Dwarven/Trollish depending on your faction.
+## Version: 1.4-wotlk
+## Author: HaptikFeedback (updated by Jahgul)
 ## SavedVariables: DwarvenizerSettings
 Dwarvenizer.xml
+
